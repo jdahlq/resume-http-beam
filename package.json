@@ -8,7 +8,10 @@
   },
   "dependencies": {
     "commander": "1.x",
-    "express": "3.x"
+    "consolidate": "0.x",
+    "express": "3.x",
+    "hogan.js": "2.x",
+    "less-middleware": "0.x"
   },
   "devDependencies": {
     "vows": "*"

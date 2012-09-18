@@ -45,12 +45,45 @@ if (cli['tests']) config.runTests = true;
 // ----------------------------------
 // SET UP HTTP SERVER
 // ----------------------------------
+// import 3rd party modules
 var express = require('express')
-  , resume = require('./js_server/resume')
+  , expressCons = require('consolidate')
+  , lessMiddleware = require('less-middleware');
+
+// import project modules
+var resume = require('./js_server/resume')
   , resumeData = require('./data/data.json');
 
+// create the http server
 var http = express(); // create an http server
-var store = new resume.JsonStore(resumeData); //initialize a JsonStore for the resume data
+
+/**
+ * Contains the resume data.
+ * @type {resume.JsonStore}
+ */
+var store = new resume.JsonStore(resumeData);
+
+// Middleware
+http.engine('html', expressCons.hogan); //templating engine
+http.set('views', __dirname + '/views'); //template directory
+http.set('view engine', 'html');  //template extension
+http.use(lessMiddleware({  //LESS CSS middleware!
+  src: __dirname + '/style',
+  dest: __dirname + '/assets',
+  prefix: '/assets',
+  compress: false
+}));
+http.use('/assets', express.static('assets')); // static file server
+http.use(http.router);  //Match routes
+//Server error:
+http.use(function (err, req, res, next) {
+  console.error(err);
+  res.send(500, 'Something catastrophic happened. See: <a href="http://homestarrunner.com/sbemail45.html">homestarrunner.com/sbemail45.html</a>')
+});
+//404 Not Found:
+http.use(function (req, res, next) {
+  res.send(404, '404 Not Found, man! See: <a href="http://mannotfounddog.ytmnd.com/">mannotfounddog.ytmnd.com</a>');
+});
 
 // Routes
 
@@ -68,7 +101,7 @@ http.get(/^\/resume\/([\w-]+)\.json$/i, function (req, res, next) {
 });
 
 http.get('/', function (req, res) {
-  res.send('Hello SEOmoz World');
+  res.render('index', store.getValue('contact'));
 });
 
 // listen on specified port
