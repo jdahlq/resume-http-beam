@@ -58,7 +58,7 @@ var store = new resume.JsonStore(resumeData); //initialize a JsonStore for the r
  * 2. If the store has a 'jobs' object, respond to client with a json object
  * 3. Else, signal the router to try the next route
  */
-http.get(/^\/([\w-]+)\.json$/i, function (req, res, next) {
+http.get(/^\/resume\/([\w-]+)\.json$/i, function (req, res, next) {
   //Note: req.params[0] is ([\w-]+), e.g. 'jobs' from '/jobs.json'
   var returnObj = store.getValue(req.params[0]);
   if (returnObj != null) res.json(returnObj);
