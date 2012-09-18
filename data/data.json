@@ -10,35 +10,95 @@
   },
   "jobs": [
     {
-      "title": "",
-      "company": "",
-      "startDate": "",
-      "endDate": "",
-      "location": "",
-      "technologies": "",
+      "title": "Software Engineer / Data Scientist",
+      "company": "CCP Data & Analytics",
+      "startDate": "March 2012",
+      "endDate": "July 2012",
+      "location": "Seattle, WA",
+      "technologies": "JavaScript, Node.js, jQuery, PHP, CentOS Linux, HTML5, CSS3, LESS CSS, Mustache.js, Greenplum, PostgreSQL, Git, Twitter Bootstrap, Java, C++, Regular expressions <3",
       "bullets": [
-        ""
+        "Contributed to open-source project Socket.io, a module for Node.js watched on GitHub by more than 5000 developers.",
+        "Developed photo kiosk web app with Node.js featuring live video preview broadcasted to mobile web browsers and photo upload through Facebook’s Graph API. Performed live demo of the system to a prospective client (large casino group) in Las Vegas.",
+        "Developed custom web application framework with Node.js which enables rapid development of real- time, data-driven applications with data mining, screen scraping, data analysis, and content delivery. Web browser clients connect with WebSockets, client code uses jQuery under the CommonJS paradigm.",
+        "Wrote code style guidelines and framework documentation for a small team of developers, established Git revision control, managed project tasks with Asana."
+      ]
+    },
+    {
+      "title": "Actuarial Analyst",
+      "company": "Regence BlueCross BlueShield",
+      "startDate": "May 2010",
+      "endDate": "February 2012",
+      "location": "Seattle, WA",
+      "technologies": "SAS, Excel, VBA, Unix, Oracle SQL, Access/MSSQL, Impact Intelligence",
+      "bullets": [
+        "Analyzed complex, non-standardized health care claims data. Automated data flows between Oracle, SAS, Excel, and vendor software, spanning Unix and Windows. Integrated vendor software with existing processes, working through many data quality issues.",
+        "Contributed new content to the Treatment Cost Estimator on myRegence.com through extensive claims data analysis and SAS programming. Revised and expanded core methodology. Wrote a parser using the SAS macro language that supports array-like syntax and iteration which allowed for cleaner code and improved reliability.",
+        "Delivered department-wide presentations and training on various SAS topics.",
+        "Contributed to the development of a new physician reimbursement system that rewards physicians for quality, efficiency, and coordination of care rather than sheer volume of services provided."
+      ]
+    },
+    {
+      "title": "Senior Developer",
+      "company": "in480, LLC (Webbr.com)",
+      "startDate": "2007",
+      "endDate": "2008",
+      "location": "Boise, ID",
+      "technologies": "Flash ActionScript 3.0, SVN, PHP",
+      "bullets": [
+        "Collaborated with programmers, graphic designers, and investors to actualize a radical new social networking concept. Led a small team to develop the front-end web application platform in object-oriented ActionScript 3.0.",
+        "Wrote comprehensive code documentation, designed an API that enabled third-party and in-house developers to write standardized apps that ran within the main application platform.",
+        "Coded all visual components (e.g. scroll bars, content panes, buttons, transitions) from scratch to minimize loading time."
+      ]
+    },
+    {
+      "title": "Developer",
+      "company": "BLAM Design, LLC",
+      "startDate": "2004",
+      "endDate": "2005",
+      "location": "Boise, ID",
+      "technologies": "Flash ActionScript, PHP, mySQL, Apache HTTP, RTF",
+      "bullets": [
+        "Worked closely with graphic designers to produce dynamic, data-driven websites and applications for various companies in Boise, including Hewlett-Packard. Met with clients to design custom web applications and websites based on needs.",
+        "Designed and maintained mySQL databases and codebases required for each project."
+      ]
+    },
+    {
+      "title": "Web Developer",
+      "company": "VirtuQuest",
+      "startDate": "2003",
+      "endDate": "2004",
+      "location": "Boise, ID",
+      "technologies": "Flash ActionScript, PHP, mySQL, Apache HTTP, Adobe Photoshop",
+      "bullets": [
+        "Implemented highly interactive Alternate Reality Games in Flash, PHP, and mySQL, drawing hundreds of participants from around the world."
       ]
     }
   ],
   "colleges": [
     {
-      "name": "",
+      "name": "University of Idaho",
       "degrees": [
-        ""
+        "B.S. Mathematics",
+        "B.A. English Literature",
+        "Physics Minor"
       ],
-      "startDate": "",
-      "endDate": "",
-      "location": "",
+      "startDate": "2005",
+      "endDate": "2010",
+      "location": "Moscow, ID",
       "bullets": [
-        ""
+        "University Honors Program Core Award for achievement in 23 credits of honors coursework.",
+        "2008 English Department Banks Award for an article that explains technical principles of quantum physics to a general, non-scientist audience.",
+        "Presented Banks Award paper at 2008 AAC&U science education conference in Providence.",
+        "Relevant non-major coursework: Computer Science (11 credits, C/C++), Econometrics."
       ]
     }
   ],
   "other-education": [
-    ""
+    "Completed <a href=\"https://coursera.org/course/ml\">Machine Learning</a> course on Coursera.com taught by Dr. Andrew Ng of Stanford (July 2012).",
+    "Attended the 2012 EMC Data Science Summit in Las Vegas.",
+    "Society of Actuaries exams passed: Probability (2010), Financial Mathematics (2011)."
   ],
   "other-skills": [
-    ""
+    "Matlab/Octave, Machine Learning (Regression, Neural Networks, Clustering, Support Vector Machines, Anomaly detection)"
   ]
 }
