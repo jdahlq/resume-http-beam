@@ -1,0 +1,9 @@
+h1. resume-http-beam
+
+A Node.js web app to beam my résumé to the grateful masses via HyperText Transfer Protocol. Energize!
+
+h3. Setup
+# Install Node.js v0.8.9. (It will probably work on much older versions, though.)
+# Clone the repo.
+# While inside your repo directory, do an @npm install@ to install the dependencies.
+# Start the server with @node server@ and voila! If you want to use a different port, then: @node server --port 1337@
