@@ -2,8 +2,24 @@ h1. resume-http-beam
 
 A Node.js web app to beam my résumé to the grateful masses via HyperText Transfer Protocol. Energize!
 
+This is currently running on a previously idling AWS EC2 instance here: "jdahlq.com":http://jdahlq.com
+
 h3. Setup
 # Install Node.js v0.8.9. (It will probably work on much older versions, though.)
 # Clone the repo.
 # While inside your repo directory, do an @npm install@ to install the dependencies.
 # Start the server with @node server@ and voila! If you want to use a different port, then: @node server --port 1337@
+
+h3. REST API (JSON)
+
+|_. Method |_. URI |_. Return Object Description |_. Live Example |
+| GET | resume/contact.json         | Contact information object | "☭":http://jdahlq.com/resume/contact.json |
+| GET | resume/jobs.json            | Array of job objects       | "☭":http://jdahlq.com/resume/jobs.json |
+| GET | resume/colleges.json        | Array of college objects   | "☭":http://jdahlq.com/resume/colleges.json |
+| GET | resume/other-education.json | Array of strings           | "☭":http://jdahlq.com/resume/other-education.json |
+| GET | resume/other-skills.json    | Array of strings           | "☭":http://jdahlq.com/resume/other-skills.json |
+
+Notes:
+* None of these resources take parameters.
+* The return values are a mixture of objects, arrays, and strings.
+* I live in the Fremont neighborhood of Seattle, so the hammer and sickles are obligatory.
