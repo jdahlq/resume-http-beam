@@ -101,9 +101,18 @@ http.get(/^\/resume\/([\w-]+)\.json$/i, function (req, res, next) {
   else next(); //try to match another route if no match is found in the store
 });
 
+// serve the client app
 http.get('/', function (req, res) {
   res.render('index', store.getValue('contact'));
 });
+
+// ??????
+http.get('/seomoz', function (req, res) {
+  require('./js_server/inconspicuousFile.js').getTwoThings(function (things) {
+    res.render('inconceivable', things);
+  });
+});
+
 
 // listen on specified port
 http.listen(config.httpPort);
