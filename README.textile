@@ -2,6 +2,8 @@ h1. resume-http-beam
 
 A Node.js web app to beam my résumé to the grateful masses via HyperText Transfer Protocol. Energize!
 
+This is currently running on a previously idling AWS EC2 instance here: "jdahlq.com":http://jdahlq.com
+
 h3. Setup
 # Install Node.js v0.8.9. (It will probably work on much older versions, though.)
 # Clone the repo.
