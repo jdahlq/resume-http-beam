@@ -74,6 +74,7 @@ http.use(lessMiddleware({  //LESS CSS middleware!
   compress: false
 }));
 http.use('/assets', express.static('assets')); // static file server
+http.use('/js', express.static('js_client'));
 http.use(http.router);  //Match routes
 //Server error:
 http.use(function (err, req, res, next) {
