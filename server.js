@@ -26,6 +26,7 @@ var config = {};
  * @type {number}
  */
 config.httpPort = 80;
+config.runTests = false;
 
 // ----------------------------------
 // PROCESS COMMAND LINE ARGS
@@ -34,11 +35,12 @@ var cli = require('commander');
 
 cli
   .option('-p --port <port>', 'HTTP server port (default: 80)', parseInt)
+  .option('-t --tests', 'Run all tests')
   .parse(process.argv);
 
-if (cli['port']) {
-  config.httpPort = cli['port'];
-}
+if (cli['port']) config.httpPort = cli['port'];
+if (cli['tests']) config.runTests = true;
+
 
 // ----------------------------------
 // SET UP HTTP SERVER
@@ -72,3 +74,6 @@ http.get('/', function (req, res) {
 // listen on specified port
 http.listen(config.httpPort);
 console.log('HTTP server listening on port', config.httpPort);
+
+// run tests if necessary
+if (config.runTests) require('./tests/testApi.js').run(config);

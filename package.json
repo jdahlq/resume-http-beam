@@ -1,10 +1,16 @@
 {
   "name": "resume-http-beam",
   "description": "Beams my résumé to the grateful masses via HyperText Transfer Protocol. Energize!",
-  "version": "0.0.0",
-  "private": false,
+  "version": "0.0.1",
+  "author": {
+    "name": "Joe Dahlquist",
+    "email": "joedahlquist@gmail.com"
+  },
   "dependencies": {
     "commander": "1.x",
     "express": "3.x"
+  },
+  "devDependencies": {
+    "vows": "*"
   }
 }
