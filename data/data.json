@@ -1,0 +1,44 @@
+{
+  "contact": {
+    "name": "Joe Dahlquist",
+    "email": "joedahlquist@gmail.com",
+    "phone": "208-871-4073",
+    "address1": "3901 Fremont Ave N #304",
+    "address2": "Seattle, WA 98103",
+    "tagline": "I am an experienced programmer, creative data analyst, and obsessive problem solver.",
+    "github": "jdahlq"
+  },
+  "jobs": [
+    {
+      "title": "",
+      "company": "",
+      "startDate": "",
+      "endDate": "",
+      "location": "",
+      "technologies": "",
+      "bullets": [
+        ""
+      ]
+    }
+  ],
+  "colleges": [
+    {
+      "name": "",
+      "degrees": [
+        ""
+      ],
+      "startDate": "",
+      "endDate": "",
+      "location": "",
+      "bullets": [
+        ""
+      ]
+    }
+  ],
+  "other-education": [
+    ""
+  ],
+  "other-skills": [
+    ""
+  ]
+}

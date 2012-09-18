@@ -4,7 +4,7 @@
  * This file was designed to be run with Node 0.8.9. Previous versions of Node will probably work
  * but have not been tested.
  *
- * To see a list of command line options, use the -h flag like this: node server.js -h
+ * To see a list of command line options, use the -h flag: node server.js -h
  */
 
 //compiles in strict mode where available
@@ -40,15 +40,31 @@ if (cli['port']) {
   config.httpPort = cli['port'];
 }
 
-
 // ----------------------------------
 // SET UP HTTP SERVER
 // ----------------------------------
-var express = require('express');
+var express = require('express')
+  , resume = require('./js_server/resume')
+  , resumeData = require('./data/data.json');
 
-var http = express();
+var http = express(); // create an http server
+var store = new resume.JsonStore(resumeData); //initialize a JsonStore for the resume data
 
-// routes
+// Routes
+
+/**
+ * Resume API Route
+ * 1. Matches routes like /jobs.json
+ * 2. If the store has a 'jobs' object, respond to client with a json object
+ * 3. Else, signal the router to try the next route
+ */
+http.get(/^\/([\w-]+)\.json$/i, function (req, res, next) {
+  //Note: req.params[0] is ([\w-]+), e.g. 'jobs' from '/jobs.json'
+  var returnObj = store.getValue(req.params[0]);
+  if (returnObj != null) res.json(returnObj);
+  else next(); //try to match another route if no match is found in the store
+});
+
 http.get('/', function (req, res) {
   res.send('Hello SEOmoz World');
 });
