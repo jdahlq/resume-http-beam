@@ -28,8 +28,10 @@ h3. Other Features
 * A UI that uses: Twitter Bootstrap, Hogan.js (Mustache templates), jQuery
 * Tests for the API. Simply supply the @--tests@ flag when you start the server.
 * A slightly awkward combination of CommonJS and namespaces (Google Closure style). The namespaces work well with my IDE.
+* No easter eggs, thankfully!
 
 h3. Limitations
 * The client-side code was thrown together quickly, so it suffers from lack of organization and no production-level optimzations.
 * No client-side testing.
 * Resumes don't have much data, so some of the architecture is somewhat contrived.
+* Absolutely NO easter eggs. None. I wouldn't bother looking if I were you.
