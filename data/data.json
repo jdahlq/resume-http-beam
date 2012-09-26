@@ -4,8 +4,11 @@
     "email": "joedahlquist@gmail.com",
     "phone": "208-871-4073",
     "address1": "3901 Fremont Ave N #304",
-    "address2": "Seattle, WA 98103",
-    "tagline": "I am an experienced programmer, creative data analyst, and obsessive problem solver.",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98103",
+    "tagline": "I am an intrepid software developer, obsessive problem solver, and iterative perfectionist.",
+    "interests": "[‘open source’, ‘web apps (full stack)’, ‘node.js’, ‘OOAD+BDD’, /(regex)+/, ‘git’, ‘data structures (are sexy)’]",
     "github": "jdahlq"
   },
   "jobs": [
@@ -94,7 +97,8 @@
     }
   ],
   "other-education": [
-    "Completed <a href=\"http://coursera.org/course/ml\">Machine Learning</a> course on Coursera.com taught by Dr. Andrew Ng of Stanford (July 2012).",
+    "Completed <a href=\"http://coursera.org/course/ml\">Machine Learning</a> course on Coursera.com taught by Prof. Andrew Ng of Stanford (July 2012).",
+    "Completed <a href=\"http://coursera.org/course/algs4partI\">Algorithms I</a> course on Coursera.com taught by Prof. Robert Sedgewick of Princeton (Sept 2012).",
     "Attended the 2012 EMC Data Science Summit in Las Vegas.",
     "Society of Actuaries exams passed: Probability (2010), Financial Mathematics (2011)."
   ],

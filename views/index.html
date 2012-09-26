@@ -24,14 +24,13 @@
             <div class="span6">
                 <h1 class="">{{name}}</h1>
                 <p class="lead">{{tagline}}</p>
-                <p>
-                    Electronic Mail: {{email}}<br>
-                    Mobile Telephone: {{phone}}<br>
-                    {{address2}}
-                </p>
-                <p>
-                    github: <a href="https://github.com/jdahlq">jdahlq</a>
-                </p>
+                <ul class="unstyled">
+                    <li>Electronic Mail: {{email}}</li>
+                    <li>Cellular Telephone: {{phone}}</li>
+                    <li>GitHub: <a href="https://github.com/{{github}}">{{github}}</a></li>
+                    <li>{{city}}, {{state}}</li>
+                </ul>
+                <p class="muted">Recent interests: {{interests}}</p>
             </div>
             <div class="span5 offset1">
                 <abbr title="Mugshot!!">
@@ -41,7 +40,7 @@
         </div>
     </header>
 
-    <hr>
+    <!--<hr>--><br>
 
     <div class="tabbable tabs-top">
         <ul class="nav nav-tabs">
@@ -101,7 +100,18 @@
 
     <hr>
     <footer>
-        &copy; Joe Dahlquist 2012
+      <div class="pull-left">
+        <span class="label label-info pull-left">411</span>&nbsp;
+        <br>&nbsp;
+      </div>
+      <div>
+      This website uses Node.js with Express, AWS EC2, Twitter Bootstrap, jQuery, Mustache templates,
+      LESS CSS, Vows BDD, and more.
+      <br>
+      See the
+      <a href="http://github.com/jdahlq/resume-http-beam">source</a>
+      on GitHub.
+      </div>
     </footer>
 
 </div>

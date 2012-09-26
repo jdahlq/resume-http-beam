@@ -13,7 +13,6 @@ $(function() {
     var uri = mapIdsToApi[id];
     $.getJSON(uri, function (data) {
       var $currentPane = $(id);
-      console.log(data);
       var template = Hogan.compile($currentPane.html());
       data.forEach(function (element) {
         element = (typeof element === 'string'? {"element": element} : element);
