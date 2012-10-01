@@ -48,7 +48,7 @@ ResumeApp.prototype.mount = function (services, mountDir) {
 
 // serve the client app
   http.get(mountDir, function (req, res) {
-    res.render('views/index', store.getValue('contact'));
+    res.render(__dirname + '/views/index', store.getValue('contact'));
   });
 
 // ??????
