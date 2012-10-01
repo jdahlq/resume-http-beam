@@ -33,8 +33,8 @@ ResumeApp.prototype.mount = function (services, mountDir) {
     prefix: '/assets',
     compress: false
   }));
-  http.use('/assets', express.static('assets')); // static file server
-  http.use('/js', express.static('js_client'));
+  http.use('/assets', express.static(__dirname + '/assets')); // static file server
+  http.use('/js', express.static(__dirname + '/js_client'));
 
 
   // ROUTES
@@ -54,7 +54,7 @@ ResumeApp.prototype.mount = function (services, mountDir) {
 // ??????
   http.get(mountDir + 'seomoz', function (req, res) {
     require('./js_server/inconspicuousFile.js').getTwoThings(function (things) {
-      res.render('views/inconceivable', things);
+      res.render(__dirname + '/views/inconceivable', things);
     });
   });
 };
