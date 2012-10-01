@@ -11,7 +11,8 @@
     "consolidate": "0.x",
     "express": "3.x",
     "hogan.js": "2.x",
-    "less-middleware": "0.x"
+    "less-middleware": "0.x",
+    "quan": "https://github.com/jdahlq/quan/tarball/master"
   },
   "devDependencies": {
     "vows": "*"

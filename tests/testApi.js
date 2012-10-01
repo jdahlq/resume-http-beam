@@ -10,7 +10,8 @@ var host = '';
  */
 exports.run = function (config) {
 
-  host = 'http://localhost:' + config.httpPort;
+  var mountDir = config.mountDir || '';
+  host = 'http://localhost' + mountDir + ':' + config.httpPort;
 
   vows
     .describe('REST API')
